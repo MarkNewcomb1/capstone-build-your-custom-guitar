@@ -6,8 +6,8 @@ class App extends Component {
     super(props);
     this.state = {
       body: 'strat',
-      hand: '',
-      paint: '',
+      hand: 'right',
+      paint: 'white',
       hardware: false,
       formProgress: 1
     };
@@ -15,11 +15,22 @@ class App extends Component {
   setBody = (body) => {
     this.setState({body});
   }
+  setHand = (hand) => {
+    this.setState({hand});
+  }
+  setPaint = (paint) => {
+    console.log(paint);
+    
+    this.setState({
+      paint: paint,
+      hardware: true
+    });
+  }
   render() {
     return (
       <div>
         <Guitar {...this.state} />
-        <Form setBody={this.setBody} />
+        <Form setBody={this.setBody} setHand={this.setHand} setPaint={this.setPaint} />
       </div>
     );
   }
