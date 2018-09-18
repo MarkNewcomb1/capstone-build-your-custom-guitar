@@ -7,9 +7,9 @@
         flex-direction: row;
     }
 }
-.guitar-component {
+.guitar-component, .form-component {
     flex: 1;
 }
 .form-component {
-    flex: 1;
+    align-self: center;
 }

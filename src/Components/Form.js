@@ -23,6 +23,14 @@ const Form = (props) => {
                 <option value='purple'>Purple</option>
             </select>
 
+            <select onChange={(e)=> props.setPickguard(e.target.value)} defaultValue = 'choose'>
+                <option value='choose' disabled>Please choose a color</option>
+                <option value='maroon'>Maroon</option>
+                <option value='#ADCEBE'>Surf Green</option>
+                <option value='#EBDFCB'>White</option>
+                <option value='purple'>Purple</option>
+            </select>
+
         </form>
     );
 }

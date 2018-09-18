@@ -35,7 +35,7 @@ class App extends Component {
     return (
       <div className='flex-parent'>
         <Guitar {...this.state} />
-        <Form setBody={this.setBody} setHand={this.setHand} setPaint={this.setPaint} />
+        <Form setBody={this.setBody} setHand={this.setHand} setPaint={this.setPaint} setPickguard={this.setPickguard} />
       </div>
     );
   }
