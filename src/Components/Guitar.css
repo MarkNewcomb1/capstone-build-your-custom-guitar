@@ -13,23 +13,46 @@
 	top: 0;
 	left: 0;
 }
+.lefty-strat-parent .svg-content.pickguard {
+    display: inline-block;
+   position: absolute;
+   top: 19%;
+   left: 6%; 
+ width: 67%;
+}
 #strat-lh {
-  fill: red;
+    fill: white;
 }
-.svg-content.pickguard {
- 	display: inline-block;
-	position: absolute;
-	top: 19%;
-	left: 6%; 
-  width: 67%;
+.lefty-strat-parent #strat-pickguard-lh {
+ fill: black;
 }
-#strat-pickguard-lh {
-  fill: black;
+.lefty-strat-parent #hardware {
+ display: inline-block;
+ position: absolute;
+ left: -2.8%;
+ top: 28%;
+ width:100%;
 }
-#hardware {
-  display: inline-block;
-  position: absolute;
-  left: -2.8%;
-  top: 28%;
-  width:100%;
+
+
+.righty-strat-parent .svg-content.pickguard {
+    display: inline-block;
+   position: absolute;
+   top: 19%;
+   right: 6%; 
+ width: 67%;
 }
+#strat-rh {
+    fill: white;
+  }
+.righty-strat-parent #strat-pickguard-rh {
+ fill: black;
+}
+.righty-strat-parent #hardware {
+ display: inline-block;
+ position: absolute;
+ right: -2.8%;
+ top: 28%;
+ width:100%;
+}
+

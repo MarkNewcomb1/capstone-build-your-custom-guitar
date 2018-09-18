@@ -1,6 +1,7 @@
 import React from 'react';
 import './Guitar.css';
 import {LeftyStrat} from './LeftyStrat';
+import {RightyStrat} from './RightyStrat';
 const Guitar = (props) => {
     // https://react-cn.github.io/react/tips/if-else-in-JSX.html
     const body = props.body;
@@ -12,8 +13,9 @@ const Guitar = (props) => {
     const rightyLesPaul = (body === 'les-paul' && hand === 'right');
 
     return (
-        <div>
+        <div className='guitar-component'>
             {leftyStrat && <LeftyStrat />}
+            {rightyStrat && <RightyStrat />}
             <h2>Left or Right handed: {props.hand}</h2>
             <h3>Paint color: {props.paint}</h3>
             <h4>Hardware: {props.hardware && 'true'}</h4>

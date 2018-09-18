@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import Guitar from './Components/Guitar';
 import Form from './Components/Form';
+import './App.css';
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      body: 'strat',
-      hand: 'right',
+      body: '',
+      hand: '',
       paint: 'white',
       hardware: false,
       pickguard: 'white',
@@ -32,7 +33,7 @@ class App extends Component {
   }
   render() {
     return (
-      <div>
+      <div className='flex-parent'>
         <Guitar {...this.state} />
         <Form setBody={this.setBody} setHand={this.setHand} setPaint={this.setPaint} />
       </div>

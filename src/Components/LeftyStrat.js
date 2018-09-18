@@ -2,11 +2,11 @@ import React from 'react';
 
     function LeftyStrat() {
         return (
-<div class="svg-container lefty-strat-parent">
-<svg preserveAspectRatio="xMinYMin meet" class="svg-content guitar-body"
+<div className="svg-container lefty-strat-parent">
+<svg preserveAspectRatio="xMinYMin meet" className="svg-content guitar-body"
      viewBox="0 0 996 1425">
   <path id="strat-lh"
-        fill="none" stroke="black" stroke-width="1"
+        fill="none"
         d="M 796.00,64.00
            C 796.00,64.00 791.00,67.00 791.00,67.00
              777.42,64.36 758.37,83.48 761.00,97.00
@@ -667,9 +667,9 @@ import React from 'react';
   
   
   
-<svg viewBox="0 0 1175 1500" preserveAspectRatio="xMinYMin meet" class="svg-content pickguard">
+<svg viewBox="0 0 1175 1500" preserveAspectRatio="xMinYMin meet" className="svg-content pickguard">
   <path id="strat-pickguard-lh"
-        fill="none" stroke="black" stroke-width="1"
+        fill="none"
         d="M 581.00,1264.00
            C 581.00,1264.00 581.00,1262.00 581.00,1262.00
              581.00,1262.00 540.00,1262.00 540.00,1262.00

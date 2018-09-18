@@ -2,7 +2,7 @@ import React from 'react';
 import './Form.css';
 const Form = (props) => {    
     return (
-        <form>
+        <form className='form-component'>
             <select onChange={(e)=> props.setBody(e.target.value)} defaultValue='choose'>
                 <option value='choose' disabled>Please choose a body style</option>
                 <option value='strat'>Stratocaster</option>

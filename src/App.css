@@ -1,0 +1,15 @@
+.flex-parent {
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 769px) {
+    .flex-parent {
+        flex-direction: row;
+    }
+}
+.guitar-component {
+    flex: 1;
+}
+.form-component {
+    flex: 1;
+}
