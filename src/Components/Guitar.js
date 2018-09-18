@@ -16,7 +16,7 @@ const Guitar = (props) => {
 
     return (
         <div className='guitar-component'>
-            {leftyStrat && <LeftyStrat />}
+            {leftyStrat && <LeftyStrat {...props} />}
             {rightyStrat && <RightyStrat />}
             {leftyLesPaul && <LeftyLesPaul />}
             {rightyLesPaul && <RightyLesPaul />}

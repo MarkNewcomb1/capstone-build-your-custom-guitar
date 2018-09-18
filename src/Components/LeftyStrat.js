@@ -1,12 +1,14 @@
 import React from 'react';
 
-    function LeftyStrat() {
+    function LeftyStrat(props) {
+      console.log("Lefty strat props: ", props);
         return (
 <div className="svg-container lefty-strat-parent">
 <svg preserveAspectRatio="xMinYMin meet" className="svg-content guitar-body"
      viewBox="0 0 996 1425">
   <path id="strat-lh"
-        fill="none"
+        fill={props.paint}
+        style={{fill: props.paint}}
         d="M 796.00,64.00
            C 796.00,64.00 791.00,67.00 791.00,67.00
              777.42,64.36 758.37,83.48 761.00,97.00

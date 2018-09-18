@@ -21,8 +21,6 @@ class App extends Component {
     this.setState({hand});
   }
   setPaint = (paint) => {
-    console.log(paint);
-    
     this.setState({
       paint: paint,
       hardware: true

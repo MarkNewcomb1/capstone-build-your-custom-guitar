@@ -1,11 +1,11 @@
 import React from 'react';
 
-function LeftyLesPaul() {
+function LeftyLesPaul(paint) {
     return (
 <div className="svg-container lefty-les-paul-parent">
 <svg viewBox="40 1540 996 1425" preserveAspectRatio="xMinYMin meet" className="svg-content guitar-body">
   <path id="les-paul-lh"
-        fill="none"
+        fill={paint.paint}
         d="M 176.00,2229.00
            C 169.28,2231.34 161.76,2242.32 157.08,2248.00
              142.38,2265.83 129.12,2284.78 116.33,2304.00

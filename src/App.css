@@ -13,3 +13,6 @@
 .form-component {
     align-self: center;
 }
+.form-component label, .form-component select {
+    display: block;
+}
