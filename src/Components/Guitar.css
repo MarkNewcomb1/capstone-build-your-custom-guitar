@@ -56,3 +56,45 @@
  width:100%;
 }
 
+.lefty-les-paul-parent #les-paul-lh {
+  fill: maroon;
+}
+.lefty-les-paul-parent .svg-content.pickguard {
+  display: inline-block;
+	position: absolute;
+	top: 17%;
+	left: 2%; 
+  width: 59%;
+}
+.lefty-les-paul-parent #les-paul-pickguard-lh {
+  fill: black;
+}
+.lefty-les-paul-parent #hardware {
+  display: inline-block;
+  position: absolute;
+  left: -3%;
+  top: 15%;
+  width:105%;
+}
+
+
+.righty-les-paul-parent #les-paul-rh {
+  fill: white;
+}
+.righty-les-paul-parent .svg-content.pickguard {
+ 	display: inline-block;
+	position: absolute;
+	top: 17%;
+	right: 2%; 
+  width: 59%;
+}
+.righty-les-paul-parent #les-paul-pickguard-rh {
+  fill: maroon;
+}
+.righty-les-paul-parent #hardware {
+  display: inline-block;
+  position: absolute;
+  left: -2%;
+  top: 15%;
+  width:105%;
+}
