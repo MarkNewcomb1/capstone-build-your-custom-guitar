@@ -9,12 +9,14 @@ const Form = (props) => {
                 <option value='les-paul'>Gibson Les Paul</option>
             </select>
 
-            <select onChange={(e)=> props.setHand(e.target.value)}>
+            <select onChange={(e)=> props.setHand(e.target.value)} defaultValue = 'choose'>
+                <option value='choose' disabled>Please choose a hand orientation</option>
                 <option value='left'>Left-Handed</option>
                 <option value='right'>Right-Handed</option>
             </select>
 
-            <select onChange={(e)=> props.setPaint(e.target.value)}>
+            <select onChange={(e)=> props.setPaint(e.target.value)} defaultValue = 'choose'>
+                <option value='choose' disabled>Please choose a color</option>
                 <option value='maroon'>Maroon</option>
                 <option value='#ADCEBE'>Surf Green</option>
                 <option value='#EBDFCB'>White</option>

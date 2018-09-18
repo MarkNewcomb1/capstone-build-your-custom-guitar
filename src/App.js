@@ -9,6 +9,7 @@ class App extends Component {
       hand: 'right',
       paint: 'white',
       hardware: false,
+      pickguard: 'white',
       formProgress: 1
     };
   }
@@ -25,6 +26,9 @@ class App extends Component {
       paint: paint,
       hardware: true
     });
+  }
+  setPickguard = (pickguard) => {
+    this.setState({pickguard});
   }
   render() {
     return (

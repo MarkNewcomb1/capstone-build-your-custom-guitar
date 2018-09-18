@@ -1,3 +1,35 @@
-.guitar {
-    background: yellow;
+.svg-container { 
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	padding-bottom: 140%; 
+	vertical-align: middle; 
+	overflow: hidden; 
+  background: black;
+}
+.svg-content.guitar-body { 
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#strat-lh {
+  fill: red;
+}
+.svg-content.pickguard {
+ 	display: inline-block;
+	position: absolute;
+	top: 19%;
+	left: 6%; 
+  width: 67%;
+}
+#strat-pickguard-lh {
+  fill: black;
+}
+#hardware {
+  display: inline-block;
+  position: absolute;
+  left: -2.8%;
+  top: 28%;
+  width:100%;
 }
