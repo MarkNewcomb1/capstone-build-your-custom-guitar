@@ -1,11 +1,12 @@
 import React from 'react';
 
-function RightyLesPaul() {
+function RightyLesPaul(props) {
     return (
 <div className="svg-container righty-les-paul-parent">
 <svg viewBox="20 1540 996 1425" preserveAspectRatio="xMinYMin meet" className="svg-content guitar-body">
   <path id="les-paul-rh"
-        fill="none"
+        fill={props.paint}
+        style={{fill: props.paint}}
         d="M 243.00,2030.00
            C 242.43,2035.54 246.52,2043.29 248.14,2049.00
              251.94,2062.36 252.75,2068.18 253.26,2082.00
@@ -123,7 +124,8 @@ function RightyLesPaul() {
   
 <svg preserveAspectRatio="xMinYMin meet" className="svg-content pickguard" viewBox="0 0 1200 1200">
   <path id="les-paul-pickguard-rh"
-        fill="none"
+        fill={props.pickguard}
+        style={{fill: props.pickguard}}
         d="M 385.00,69.00
            C 383.24,71.05 381.89,72.40 380.89,75.00
              378.30,81.73 379.00,101.91 379.00,110.00

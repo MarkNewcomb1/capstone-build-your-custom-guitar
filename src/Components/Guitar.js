@@ -17,9 +17,9 @@ const Guitar = (props) => {
     return (
         <div className='guitar-component'>
             {leftyStrat && <LeftyStrat {...props} />}
-            {rightyStrat && <RightyStrat />}
-            {leftyLesPaul && <LeftyLesPaul />}
-            {rightyLesPaul && <RightyLesPaul />}
+            {rightyStrat && <RightyStrat {...props} />}
+            {leftyLesPaul && <LeftyLesPaul {...props} />}
+            {rightyLesPaul && <RightyLesPaul {...props} />}
             <h2>Left or Right handed: {props.hand}</h2>
             <h3>Paint color: {props.paint}</h3>
             <h4>Hardware: {props.hardware && 'true'}</h4>

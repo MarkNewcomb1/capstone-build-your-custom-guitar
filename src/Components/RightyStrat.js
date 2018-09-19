@@ -1,12 +1,13 @@
 import React from 'react';
 
-    function RightyStrat() {
+    function RightyStrat(props) {
         return (
 <div className="svg-container righty-strat-parent">
 <svg preserveAspectRatio="xMinYMin meet" className="svg-content guitar-body"
      viewBox="0 0 996 1425">
   <path id="strat-rh"
-        fill="none"
+        fill={props.paint}
+        style={{fill: props.paint}}
         d="M 111.00,157.00
            C 107.26,158.16 108.32,161.90 109.00,165.00
              106.81,165.86 107.60,166.85 108.00,169.00
@@ -658,7 +659,8 @@ import React from 'react';
   
 <svg viewBox="0 0 1175 1500" preserveAspectRatio="xMinYMin meet" className="svg-content pickguard">
   <path id="strat-pickguard-rh"
-        fill="none"
+        fill={props.pickguard}
+        style={{fill: props.pickguard}}
         d="M 546.00,281.00
            C 546.84,282.43 546.83,282.88 548.29,284.00
              548.29,284.00 573.00,293.80 573.00,293.80

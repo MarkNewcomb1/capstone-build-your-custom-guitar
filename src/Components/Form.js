@@ -33,6 +33,7 @@ const Form = (props) => {
                 <option value='#ADCEBE'>Surf Green</option>
                 <option value='#EBDFCB'>White</option>
                 <option value='purple'>Purple</option>
+                <option value='black'>Black</option>
             </select>
         </label>
         </form>

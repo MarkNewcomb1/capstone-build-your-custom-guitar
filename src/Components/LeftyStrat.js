@@ -1,7 +1,6 @@
 import React from 'react';
 
     function LeftyStrat(props) {
-      console.log("Lefty strat props: ", props);
         return (
 <div className="svg-container lefty-strat-parent">
 <svg preserveAspectRatio="xMinYMin meet" className="svg-content guitar-body"
@@ -671,7 +670,8 @@ import React from 'react';
   
 <svg viewBox="0 0 1175 1500" preserveAspectRatio="xMinYMin meet" className="svg-content pickguard">
   <path id="strat-pickguard-lh"
-        fill="none"
+        fill={props.pickguard}
+        style={{fill: props.pickguard}}
         d="M 581.00,1264.00
            C 581.00,1264.00 581.00,1262.00 581.00,1262.00
              581.00,1262.00 540.00,1262.00 540.00,1262.00
