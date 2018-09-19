@@ -5,7 +5,7 @@
 	padding-bottom: 140%; 
 	vertical-align: middle; 
 	overflow: hidden; 
-  background: black;
+  /* background: black; */
 }
 .svg-content.guitar-body { 
 	display: inline-block;
@@ -24,7 +24,7 @@
     fill: white;
 }
 .lefty-strat-parent #strat-pickguard-lh {
- fill: black;
+ fill: white;
 }
 .lefty-strat-parent #hardware {
  display: inline-block;
@@ -46,7 +46,7 @@
     fill: white;
   }
 .righty-strat-parent #strat-pickguard-rh {
- fill: black;
+ fill: white;
 }
 .righty-strat-parent #hardware {
  display: inline-block;
@@ -57,7 +57,7 @@
 }
 
 .lefty-les-paul-parent #les-paul-lh {
-  fill: maroon;
+  fill: white;
 }
 .lefty-les-paul-parent .svg-content.pickguard {
   display: inline-block;
@@ -67,7 +67,7 @@
   width: 59%;
 }
 .lefty-les-paul-parent #les-paul-pickguard-lh {
-  fill: black;
+  fill: white;
 }
 .lefty-les-paul-parent #hardware {
   display: inline-block;
@@ -89,7 +89,7 @@
   width: 59%;
 }
 .righty-les-paul-parent #les-paul-pickguard-rh {
-  fill: maroon;
+  fill: white;
 }
 .righty-les-paul-parent #hardware {
   display: inline-block;

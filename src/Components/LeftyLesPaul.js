@@ -215,7 +215,7 @@ function LeftyLesPaul(props) {
              529.56,939.08 519.23,922.01 533.00,915.56 Z" />
 </svg>
  
-   <img id="hardware" src="http://marknewcomb1.com/les-paul-hardware-lh.png"/> 
+   <img id="hardware" src={require('../img/les-paul-hardware-lh.png')} alt="les paul hardware" /> 
 </div>
 
     );

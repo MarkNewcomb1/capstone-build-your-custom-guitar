@@ -6,7 +6,7 @@ const Form = (props) => {
         <label>Choose a body style - Stratocaster or Les Paul:
             <select onChange={(e)=> props.setBody(e.target.value)} defaultValue='choose'>
                 <option value='choose' disabled>Please choose a body style</option>
-                <option value='strat'>Stratocaster</option>
+                <option value='strat'>Fender Stratocaster</option>
                 <option value='les-paul'>Gibson Les Paul</option>
             </select>
         </label>
@@ -22,8 +22,9 @@ const Form = (props) => {
                 <option value='choose' disabled>Please choose a body color</option>
                 <option value='maroon'>Maroon</option>
                 <option value='#ADCEBE'>Surf Green</option>
-                <option value='#EBDFCB'>White</option>
+                <option value='#fffff6'>White</option>
                 <option value='purple'>Purple</option>
+                <option value='black'>Black</option>
             </select>
         </label>
         <label>Choose a color for the pickguard:
@@ -31,7 +32,7 @@ const Form = (props) => {
                 <option value='choose' disabled>Please choose a pickguard color</option>
                 <option value='maroon'>Maroon</option>
                 <option value='#ADCEBE'>Surf Green</option>
-                <option value='#EBDFCB'>White</option>
+                <option value='white'>White</option>
                 <option value='purple'>Purple</option>
                 <option value='black'>Black</option>
             </select>

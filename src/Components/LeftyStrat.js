@@ -1586,7 +1586,7 @@ import React from 'react';
              67.00,1473.00 68.00,1473.00 68.00,1473.00 Z" />
 </svg>
   
- <img id="hardware" src="http://marknewcomb1.com/strat-hardware-lh.png" />
+ <img id="hardware" src={require('../img/strat-hardware-lh.png')} />
 </div>
         );
     }
