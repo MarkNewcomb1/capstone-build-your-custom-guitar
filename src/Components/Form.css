@@ -1,3 +1,28 @@
 body {
     color: white;
 }
+
+label {
+    overflow: hidden;
+    margin-bottom: 2em;
+}
+select {
+    margin-top:.40em;
+}
+label select {
+    font-size: 1.2em;
+    padding: 15px 8px;
+    width: 315px;
+    border: none;
+    box-shadow: none;
+    background: white;
+    background-image: none;
+    -webkit-appearance: none;
+    /* background: #fafafa url("../img/icon-select.svg") no-repeat 90% 50%; */
+}
+
+@media (min-width: 769px) {
+    label select {
+        width: 335px;
+    }
+}

@@ -1,3 +1,12 @@
+h1, h2, h3, h4, h5 {
+    margin:0;
+    padding:0;
+}
+#root {
+    padding: 0 10%;
+    margin: 0 auto;
+    padding-top: 5%;
+}
 .flex-parent {
     display: flex;
     flex-direction: column;
@@ -6,12 +15,18 @@
     .flex-parent {
         flex-direction: row;
     }
+    #root {
+        padding: 0 3%;
+        max-width: 1400px;
+        padding-top: 3%;
+    }
 }
 .guitar-component, .form-component {
     flex: 1;
 }
 .form-component {
-    align-self: center;
+    align-self: flex-start;
+    padding-top: 15%;
 }
 .form-component label, .form-component select {
     display: block;
