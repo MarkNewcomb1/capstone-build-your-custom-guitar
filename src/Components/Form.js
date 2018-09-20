@@ -2,22 +2,22 @@ import React from 'react';
 import './Form.css';
 const Form = (props) => {    
     return (
-        <form className='form-component'>
-        <label>Choose a body style - Stratocaster or Les Paul:
+        <form className='form-component' onSubmit={props.send}>
+        <label htmlFor="body">Choose a body style - Stratocaster or Les Paul:
             <select onChange={(e)=> props.setBody(e.target.value)} defaultValue='choose'>
                 <option value='choose' disabled>Please choose a body style</option>
                 <option value='strat'>Fender Stratocaster</option>
                 <option value='les-paul'>Gibson Les Paul</option>
             </select>
         </label>
-        <label>Choose Left-Handed or Right-Handed:
+        <label htmlFor="hand">Choose Left-Handed or Right-Handed:
             <select onChange={(e)=> props.setHand(e.target.value)} defaultValue = 'choose'>
                 <option value='choose' disabled>Please choose a hand orientation</option>
                 <option value='left'>Left-Handed</option>
                 <option value='right'>Right-Handed</option>
             </select>
         </label>
-        <label>Choose a color for the body: 
+        <label htmlFor="paint">Choose a color for the body: 
             <select onChange={(e)=> props.setPaint(e.target.value)} defaultValue = 'choose'>
                 <option value='choose' disabled>Please choose a body color</option>
                 <option value='maroon'>Maroon</option>
@@ -34,7 +34,7 @@ const Form = (props) => {
                 <option value="url(#clear)">Clear Finish</option>
             </select>
         </label>
-        <label>Choose a color for the pickguard:
+        <label htmlFor="pickguard">Choose a color for the pickguard:
             <select onChange={(e)=> props.setPickguard(e.target.value)} defaultValue = 'choose'>
                 <option value='choose' disabled>Please choose a pickguard color</option>
                 <option value='maroon'>Maroon</option>
@@ -44,6 +44,7 @@ const Form = (props) => {
                 <option value='black'>Black</option>
             </select>
         </label>
+        <input type="submit" name="submit" value="BUY" />
         </form>
     );
 }

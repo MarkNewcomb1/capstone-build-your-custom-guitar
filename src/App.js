@@ -14,6 +14,34 @@ class App extends Component {
       formProgress: 1
     };
   }
+
+  addSubmitEvent = (event) => {
+    event.preventDefault();
+    return fetch('http://localhost:8000/orders/', {
+      method: 'post',
+      headers: new Headers({
+        'Content-Type': 'application/json'
+      }),
+      body: JSON.stringify(this.state)
+    })
+      .then(resp => {
+        if (!resp.ok) {
+          if (resp.status >= 400 && resp.status < 500) {
+            return resp.json().then(data => {
+              const err = { errorMessage: data.message };
+              throw err;
+            });
+          }
+          const err = { errorMessage: 'Blah' };
+          throw err;
+        }
+        return resp.json();
+      })
+      .then(json => {
+        console.log(json);
+      })
+  }
+
   setBody = (body) => {
     this.setState({body});
   }
@@ -33,7 +61,7 @@ class App extends Component {
     return (
       <div className='flex-parent'>
         <Guitar {...this.state} />
-        <Form setBody={this.setBody} setHand={this.setHand} setPaint={this.setPaint} setPickguard={this.setPickguard} />
+        <Form setBody={this.setBody} setHand={this.setHand} setPaint={this.setPaint} setPickguard={this.setPickguard} send={this.addSubmitEvent} />
       </div>
     );
   }
