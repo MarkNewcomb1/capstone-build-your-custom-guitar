@@ -41,3 +41,25 @@ label select {
         font-size: .7em;
     }
 }
+
+/* input[type=text] {
+    padding:5px; 
+    border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input[type=text]:focus {
+    border-color:#333;
+} */
+
+input[type=submit] {
+    padding: 10px 60px;
+    background: lightgreen;
+    border: 0 none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 1.25em;
+}
