@@ -25,6 +25,13 @@ const Form = (props) => {
                 <option value='#fffff6'>White</option>
                 <option value='purple'>Purple</option>
                 <option value='black'>Black</option>
+                <option value="url(#metallic-teal)">Metallic Teal</option>
+                <option value="url(#metallic-blue)">Metallic Blue</option>
+                <option value="url(#metallic-burnt-orange)">Metallic Burnt Orange</option>
+                <option value="url(#metallic-gold)">Metallic Gold</option>
+                <option value="url(#metallic-gray)">Metallic Gray</option>
+                <option value="url(#metallic-purple)">Metallic Purple</option>
+                <option value="url(#clear)">Clear Finish</option>
             </select>
         </label>
         <label>Choose a color for the pickguard:

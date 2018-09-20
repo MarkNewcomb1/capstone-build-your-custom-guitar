@@ -98,3 +98,8 @@
   top: 15%;
   width:105%;
 }
+
+svg.pattern {
+  width: 0;
+  height: 0;
+}

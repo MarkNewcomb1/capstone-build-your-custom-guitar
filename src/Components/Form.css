@@ -10,9 +10,9 @@ select {
     margin-top:.40em;
 }
 label select {
-    font-size: 1.2em;
+    font-size: 1em;
     padding: 15px 8px;
-    width: 315px;
+    width: 265px;
     border: none;
     box-shadow: none;
     background: white;
@@ -20,9 +20,24 @@ label select {
     -webkit-appearance: none;
     /* background: #fafafa url("../img/icon-select.svg") no-repeat 90% 50%; */
 }
+@media (min-width: 375px) {
+    label select {
+        font-size: 1.2em;
+        width: 300px;
+    }
+}
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
     label select {
         width: 335px;
+    }
+}
+
+@media (min-width: 1024px) {
+    label {
+        font-size: 1.9em;
+    }
+    label select {
+        font-size: .7em;
     }
 }

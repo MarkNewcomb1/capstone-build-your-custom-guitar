@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 h1, h2, h3, h4, h5 {
     margin:0;
     padding:0;
@@ -11,7 +14,7 @@ h1, h2, h3, h4, h5 {
     display: flex;
     flex-direction: column;
 }
-@media (min-width: 769px) {
+@media (min-width: 768px) {
     .flex-parent {
         flex-direction: row;
     }
@@ -28,6 +31,11 @@ h1, h2, h3, h4, h5 {
     align-self: flex-start;
     padding-top: 15%;
 }
+/* @media (min-width: 769px) {
+    .form-component {
+        padding-top: 15%;
+    }    
+} */
 .form-component label, .form-component select {
     display: block;
 }

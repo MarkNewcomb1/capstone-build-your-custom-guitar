@@ -4,6 +4,13 @@ import {LeftyStrat} from './LeftyStrat';
 import {RightyStrat} from './RightyStrat';
 import {LeftyLesPaul} from './LeftyLesPaul';
 import {RightyLesPaul} from './RightyLesPaul';
+import {MetallicTeal} from './MetallicTeal';
+import {MetallicBlue} from './MetallicBlue';
+import {MetallicBurntOrange} from './MetallicBurntOrange';
+import {MetallicGold} from './MetallicGold';
+import {MetallicGray} from './MetallicGray';
+import {MetallicPurple} from './MetallicPurple';
+import {Clear} from './Clear';
 const Guitar = (props) => {
     // https://react-cn.github.io/react/tips/if-else-in-JSX.html
     const body = props.body;
@@ -14,8 +21,16 @@ const Guitar = (props) => {
     const leftyLesPaul = (body === 'les-paul' && hand === 'left');
     const rightyLesPaul = (body === 'les-paul' && hand === 'right');
 
+
     return (
         <div className='guitar-component'>
+        <MetallicTeal />
+        <MetallicBlue />
+        <MetallicBurntOrange />
+        <MetallicGold />
+        <MetallicGray />
+        <MetallicPurple />
+        <Clear />
             <h1>Your Build:</h1>
             {leftyStrat && <LeftyStrat {...props} />}
             {rightyStrat && <RightyStrat {...props} />}
