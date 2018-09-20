@@ -35,6 +35,8 @@ class App extends Component {
           const err = { errorMessage: 'Blah' };
           throw err;
         }
+        console.log("RESP", resp);
+        
         return resp.json();
       })
       .then(json => {
