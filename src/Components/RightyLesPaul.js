@@ -215,7 +215,7 @@ function RightyLesPaul(props) {
              655.11,938.45 649.94,928.52 653.15,921.10
              654.73,917.44 657.45,916.46 661.00,915.39 Z" />
 </svg>
-  <img id="hardware" src={require('../img/les-paul-hardware-rh.png')} />
+  <img id="hardware" src={require('../img/les-paul-hardware-rh.png')} alt="righty les paul" />
 </div>
     );}
 export {RightyLesPaul};

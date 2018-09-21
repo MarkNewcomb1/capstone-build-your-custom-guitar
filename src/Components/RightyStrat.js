@@ -1578,7 +1578,7 @@ import React from 'react';
              1108.00,1474.00 1107.00,1473.00 1107.00,1473.00
              1107.00,1473.00 1108.00,1473.00 1108.00,1473.00 Z" />
 </svg>
-  <img id="hardware" src={require('../img/strat-hardware-rh.png')} />
+  <img id="hardware" src={require('../img/strat-hardware-rh.png')} alt="righty strat" />
 </div>
         );
     }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Guitar from './Components/Guitar';
 import Form from './Components/Form';
+import FormResults from './Components/FormResults';
 import './App.css';
 class App extends Component {
   constructor(props) {
@@ -11,7 +12,7 @@ class App extends Component {
       paint: 'white',
       hardware: false,
       pickguard: 'white',
-      formProgress: 1
+      formSubmitted: false
     };
   }
 
@@ -35,12 +36,12 @@ class App extends Component {
           const err = { errorMessage: 'Blah' };
           throw err;
         }
-        console.log("RESP", resp);
-        
         return resp.json();
       })
       .then(json => {
-        console.log(json);
+        this.setState({
+          formSubmitted: json
+        })
       })
   }
 
@@ -63,7 +64,8 @@ class App extends Component {
     return (
       <div className='flex-parent'>
         <Guitar {...this.state} />
-        <Form setBody={this.setBody} setHand={this.setHand} setPaint={this.setPaint} setPickguard={this.setPickguard} send={this.addSubmitEvent} />
+        {!this.state.formSubmitted && <Form setBody={this.setBody} setHand={this.setHand} setPaint={this.setPaint} setPickguard={this.setPickguard} send={this.addSubmitEvent} />}
+        {this.state.formSubmitted && <FormResults {...this.state} />}
       </div>
     );
   }
