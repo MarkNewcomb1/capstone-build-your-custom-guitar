@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5 {
 }
 .form-component, .form-results-component {
     align-self: flex-start;
-    padding-top: 15%;
+    /* padding-top: 15%; */
 }
 .form-results-component {
     line-height: 1.3;

@@ -3,6 +3,7 @@ import './Form.css';
 const Form = (props) => {    
     return (
         <form className='form-component' onSubmit={props.send}>
+        <img src={require('../img/bycg-logo.png')} alt="logo" id="logo" />
         <label htmlFor="body">Choose a body style - Stratocaster or Les Paul:
             <select onChange={(e)=> props.setBody(e.target.value)} defaultValue='choose'>
                 <option value='choose' disabled>Please choose a body style</option>
