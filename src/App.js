@@ -18,7 +18,8 @@ class App extends Component {
 
   addSubmitEvent = (event) => {
     event.preventDefault();
-    return fetch('http://localhost:8000/orders/', {
+    // return fetch('http://localhost:8000/orders/', {
+      return fetch('https://capstone-server-mark-newcomb.herokuapp.com/orders', {
       method: 'post',
       headers: new Headers({
         'Content-Type': 'application/json'
