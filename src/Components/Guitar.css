@@ -34,7 +34,9 @@
  width:100%;
 }
 
-path { transition: fill .4s ease-in-out; }
+path { 
+  transition: fill .4s ease-in-out; 
+}
 
 .righty-strat-parent .svg-content.pickguard {
     display: inline-block;

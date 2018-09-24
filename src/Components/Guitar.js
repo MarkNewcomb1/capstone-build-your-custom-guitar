@@ -31,7 +31,6 @@ const Guitar = (props) => {
         <MetallicGray />
         <MetallicPurple />
         <Clear />
-            <h1>Your Build:</h1>
             {leftyStrat && <LeftyStrat {...props} />}
             {rightyStrat && <RightyStrat {...props} />}
             {leftyLesPaul && <LeftyLesPaul {...props} />}

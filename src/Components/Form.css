@@ -7,12 +7,12 @@ label {
     margin-bottom: 2em;
 }
 #logo {
-    max-width: 100%;
-    padding: 15% 0;
+    max-width: 235px;
+    padding: 3% 0;
 }
 @media (min-width: 768px) {
     #logo {
-        padding-top: 5%;
+        padding-top: 0;
     }
 }
 select {
